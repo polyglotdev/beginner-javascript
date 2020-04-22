@@ -25,8 +25,14 @@ const doABunchOfThings = () => {
 
 doABunchOfThings()
 
-// Callstack
-
+// Call Stack
+/* 
+think about the error being:
+error was at line X
+It was called by X
+and then called by X
+function was executed on line
+*/
 // Grabbing Elements
 
 // Breakpoints
