@@ -2,7 +2,7 @@
 var first = 'elijah'
 
 // block scoped
-let age = 300
+const age = 300
 const myName = 'ezra'
 
 console.log(`first: ${first}`)
