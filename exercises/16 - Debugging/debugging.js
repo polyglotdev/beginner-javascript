@@ -4,10 +4,6 @@ const people = [
   { name: 'Snickers', cool: false, country: 'Dog Country' },
 ]
 
-people.forEach((person, index) => {
-  console.log(person.name)
-})
-
 // Console Methods
 console.info('This is some info')
 console.error(`ERROR`)
@@ -37,7 +33,10 @@ function was executed on line
 // You can use $ and pass an element as an argument to grab the first one of those element or $$ to grab them all
 
 // Breakpoints
-
+//
+people.forEach((person) => {
+  console.log(person.name)
+})
 // Scope
 
 // Network Requests
