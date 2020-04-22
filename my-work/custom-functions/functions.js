@@ -45,3 +45,9 @@ const dom = {
 }
 
 console.log(dom.hi())
+
+// Callback Function
+const button = document.querySelector('.clickMe')
+button.addEventListener('click', (event) => {
+  console.log('clicked')
+})
