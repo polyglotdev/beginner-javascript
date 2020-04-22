@@ -14,6 +14,16 @@ console.error(`ERROR`)
 console.warn(`I'd be more careful`)
 console.table(people)
 // console.count() counts the number of times something does something
+const doABunchOfThings = () => {
+  console.group('stuff')
+  console.info('This is some info')
+  console.error(`ERROR`)
+  console.warn(`I'd be more careful`)
+  console.table(people)
+  console.groupEnd('stuff')
+}
+
+doABunchOfThings()
 
 // Callstack
 
