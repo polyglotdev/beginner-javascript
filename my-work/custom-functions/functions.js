@@ -19,3 +19,15 @@ function doctor(firstName) {
 }
 
 doctor('Dom Hallan') /* ? */
+
+const inchesToCentimeters = (inches) => inches * 2.54
+inchesToCentimeters(12) /* ? */
+
+const makeABaby = (first, last) => {
+  return {
+    name: `${first} ${last}`,
+    age: 0,
+  }
+}
+
+makeABaby('Elijah', 'Hallan') /* ? */
