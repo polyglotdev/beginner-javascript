@@ -11,3 +11,10 @@ const sentence = 'Hello my name is '
 const concatSentenceAndName = `${sentence} ${name}!`
 
 console.log(concatSentenceAndName)
+
+const html = `
+  <div>
+    <p>Hey</p>
+  </div>
+`
+console.log(html)
