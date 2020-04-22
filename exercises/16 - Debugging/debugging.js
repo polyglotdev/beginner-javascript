@@ -2,13 +2,18 @@ const people = [
   { name: 'Wes', cool: true, country: 'Canada' },
   { name: 'Scott', cool: true, country: 'Merica' },
   { name: 'Snickers', cool: false, country: 'Dog Country' },
-];
+]
 
 people.forEach((person, index) => {
-  console.log(person.name);
-});
+  console.log(person.name)
+})
 
 // Console Methods
+console.info('This is some info')
+console.error(`ERROR`)
+console.warn(`I'd be more careful`)
+console.table(people)
+// console.count() counts the number of times something does something
 
 // Callstack
 
@@ -25,25 +30,24 @@ people.forEach((person, index) => {
 // Some Setup Code
 
 function doctorize(name) {
-  return `Dr. ${name}`;
+  return `Dr. ${name}`
 }
 
 function greet(name) {
-  doesntExist();
-  return `Hello ${name}`;
+  doesntExist()
+  return `Hello ${name}`
 }
 
 function go() {
-  const name = doctorize(greet('Wes'));
-  console.log(name);
+  const name = doctorize(greet('Wes'))
+  console.log(name)
 }
 
-const button = document.querySelector('.bigger');
+const button = document.querySelector('.bigger')
 button.addEventListener('click', function(e) {
-  const newFontSize =
-    parseFloat(getComputedStyle(e.currentTarget).fontSize) + 1;
-  e.currentTarget.style.fontSize = `${newFontSize}px`;
-});
+  const newFontSize = parseFloat(getComputedStyle(e.currentTarget).fontSize) + 1
+  e.currentTarget.style.fontSize = `${newFontSize}px`
+})
 
 // A Dad joke fetch
 async function fetchDadJoke() {
@@ -51,8 +55,8 @@ async function fetchDadJoke() {
     headers: {
       Accept: 'text/plain',
     },
-  });
-  const joke = await res.text();
-  console.log(joke);
-  return joke;
+  })
+  const joke = await res.text()
+  console.log(joke)
+  return joke
 }
