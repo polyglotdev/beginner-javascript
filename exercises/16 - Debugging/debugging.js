@@ -34,6 +34,7 @@ and then called by X
 function was executed on line
 */
 // Grabbing Elements
+// You can use $ and pass an element as an argument to grab the first one of those element or $$ to grab them all
 
 // Breakpoints
 
