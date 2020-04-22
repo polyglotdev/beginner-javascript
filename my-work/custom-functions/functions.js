@@ -40,14 +40,22 @@ makeABaby('Elijah', 'Hallan') /* ? */
 const dom = {
   fullName: 'Dom Hallan',
   hi() {
-    return `Hey ${this.fullName}`
+    return `Hey, ${this.fullName}`
   },
 }
 
 console.log(dom.hi())
 
 // Callback Function
-const button = document.querySelector('.clickMe')
-button.addEventListener('click', (event) => {
-  console.log('clicked')
-})
+// const button = document.querySelector('.clickMe')
+// button.addEventListener('click', (event) => {
+//   console.log('clicked')
+// })
+
+const sayHey = (name) => {
+  setTimeout(() => {
+    console.log(`Heeeey ${name} 👋🏾`)
+  }, 5000)
+}
+
+sayHey('Dominique Israel Hallan')
