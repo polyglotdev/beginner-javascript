@@ -31,3 +31,17 @@ const makeABaby = (first, last) => {
 }
 
 makeABaby('Elijah', 'Hallan') /* ? */
+;(function(age) {
+  console.log(`You are a cool ${age} year old 👍🏾`)
+  return `You are a cool ${age} year old 👍🏾`
+})(37)
+
+// Methods are functions that live inside of a function
+const dom = {
+  fullName: 'Dom Hallan',
+  hi() {
+    return `Hey ${this.fullName}`
+  },
+}
+
+console.log(dom.hi())
